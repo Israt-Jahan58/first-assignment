@@ -219,24 +219,21 @@ line-height: normal;
     line-height: 32px; /* 160% */
 }
 .grid {
-    --col: 9.5rem;
-    --row: 8rem;
-    --gap: 2rem;
-  
+ 
     display: grid;
-    grid-template-columns: repeat(3, var(--col));
-    grid-template-rows: repeat(4, var(--row));
-    grid-gap: var(--gap);
+   
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
+   width: 1300px;
+   margin: auto;
+   margin-top: 30px;
   }
   
   .grid--full {
-    --col: 30%;
-    --row: 4rem;
-    --gap: 1rem;
+ 
   }
   
-  @media (prefers-reduced-motion: no-preference) {
-    .grid {
-      transition: all 1s;
-    }
+
+  .group-61{
+    
   }
