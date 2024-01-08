@@ -190,3 +190,53 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+.h-one{
+    color: #F00;
+
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.h-two{
+    color: #070211;
+
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.h-three{
+    color: rgba(7, 2, 17, 0.60);
+
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+.grid {
+    --col: 9.5rem;
+    --row: 8rem;
+    --gap: 2rem;
+  
+    display: grid;
+    grid-template-columns: repeat(3, var(--col));
+    grid-template-rows: repeat(4, var(--row));
+    grid-gap: var(--gap);
+  }
+  
+  .grid--full {
+    --col: 30%;
+    --row: 4rem;
+    --gap: 1rem;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .grid {
+      transition: all 1s;
+    }
+  }
